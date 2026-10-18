@@ -1,9 +1,9 @@
 window.STAY = {
   contact: { line: null, phone: null },
   rooms: [
-    { id: 'community-suite', name: '社區套房', group: '社區套房', type: '套房', number: '01', bathroom: '獨立衛浴之配置與設備待確認', shared: '社區公共空間與使用規範待確認', photos: [] },
+    { id: 'community-suite', name: '社區套房', group: '社區套房', type: '套房', number: '01', cover: { src: 'images/community-suite-cover.png', alt: '莊日子 Stay 社區套房租屋廣告封面，含室內空間與品牌文字' }, rent: 'NT$ 18,500（可議）', equipment: '洗衣機／瞬熱式熱水器／冷氣機／冰箱／衣櫥／課桌椅／沙發', bathroom: '獨立衛浴', shared: '社區公共空間／電梯', deposit: '兩個月租金', water: '台水', electricity: '台電', management: '租金已包含', internet: '可自行申請', otherFees: '無', term: '一年以上', occupancy: '標準兩大一小', pets: '不可', smoking: '不可', available: '2027 年 10 月 3 日', photos: [{"src":"images/community-suite-01.png","alt":"社區套房｜房間全景：沙發、衣櫃、床架與書桌"},{"src":"images/community-suite-02.png","alt":"社區套房｜窗邊與睡眠區：衣櫃、床架與書桌"},{"src":"images/community-suite-03.png","alt":"社區套房｜生活區：沙發、書桌與床架"},{"src":"images/community-suite-04.png","alt":"社區套房｜由床邊望向房間入口"},{"src":"images/community-suite-05.png","alt":"社區套房｜收納櫃、冰箱、沙發與衣櫃"},{"src":"images/community-suite-06.png","alt":"社區套房｜收納櫃與冰箱區"},{"src":"images/community-suite-07.png","alt":"社區套房｜冰箱與收納層架近景"},{"src":"images/community-suite-08.png","alt":"社區套房｜衛浴空間全景"},{"src":"images/community-suite-09.png","alt":"社區套房｜衛浴內洗衣機近景"}] },
     { id: 'apartment-room-a', name: '公寓雅房 A', group: '公寓房間', type: '雅房', number: '02', bathroom: '衛浴是否共用、共用人數與清潔方式待確認', shared: '公共空間是否共用、範圍與使用規範待確認', photos: [] },
     { id: 'apartment-room-b', name: '公寓雅房 B', group: '公寓房間', type: '雅房', number: '03', bathroom: '衛浴是否共用、共用人數與清潔方式待確認', shared: '公共空間是否共用、範圍與使用規範待確認', photos: [] },
     { id: 'apartment-suite', name: '公寓套房', group: '公寓房間', type: '套房', number: '04', bathroom: '獨立衛浴之配置與設備待確認', shared: '公共空間是否共用、範圍與使用規範待確認', photos: [] }
-  ].map(room => ({ rent: '待確認', area: '待確認', status: '待確認', equipment: '待確認', available: '待確認', deposit: '待確認', electricity: '待確認', water: '待確認', management: '待確認', internet: '待確認', term: '待確認', pets: '待確認', smoking: '待確認', ...room }))
+  ].map(room => ({ rent: '待確認', area: '待確認', status: '待確認', equipment: '待確認', available: '待確認', deposit: '待確認', electricity: '待確認', water: '待確認', management: '待確認', internet: '待確認', term: '待確認', pets: '待確認', smoking: '待確認', otherFees: '待確認', occupancy: '待確認', ...room }))
 };

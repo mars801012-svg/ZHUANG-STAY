@@ -1,1 +1,52 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="莊日子 Stay｜新莊體育館周邊，社區套房與公寓雅套房。了解房況、費用與居住環境，聯絡預約看屋。"><title>首頁｜莊日子 Stay</title><link rel="stylesheet" href="style.css"><script defer src="data.js?v=af1f765"></script><script defer src="app.js?v=af1f765"></script></head><body data-page="home" data-room="index"><div id="app"></div><noscript>此預覽需要 JavaScript 才能呈現房源資料，請啟用 JavaScript 後重新整理。</noscript></body></html>
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="莊日子 Stay｜新莊體育館周邊，社區套房與公寓雅套房。了解房況、費用與居住環境，聯絡預約看屋。"><title>首頁｜莊日子 Stay</title><link rel="stylesheet" href="style.css"><script defer src="data.js?v=af1f765"></script><script defer src="app.js?v=af1f765"></script>
+<style>
+  .owner-notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #edf0e5;
+    border-bottom: 1px solid #d5ddcc;
+    color: #304939;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .owner-notice-icon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dce7d6;
+  }
+  .owner-notice-shield {
+    display: grid;
+    place-items: center;
+    width: 13px;
+    height: 15px;
+    clip-path: polygon(50% 0, 100% 18%, 92% 62%, 74% 82%, 50% 100%, 26% 82%, 8% 62%, 0 18%);
+    background: #416347;
+    color: #fff;
+    font: 700 9px/1 system-ui, sans-serif;
+  }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('#app > header');
+  const notice = document.getElementById('owner-notice-template');
+  if (header && notice) {
+    header.after(notice.content.cloneNode(true));
+  }
+});
+</script>
+</head><body data-page="home" data-room="index"><div id="app"></div>
+<template id="owner-notice-template">
+  <aside class="owner-notice" aria-label="反詐騙提醒">
+    <span class="owner-notice-icon" aria-hidden="true"><span class="owner-notice-shield">✓</span></span>
+    <span>屋主自營 先看屋反詐騙</span>
+  </aside>
+</template>
+<noscript>此預覽需要 JavaScript 才能呈現房源資料，請啟用 JavaScript 後重新整理。</noscript></body></html>

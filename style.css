@@ -3,3 +3,7 @@
 .room-cover{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center;border:0}
 
 .gallery{min-width:0}.gallery #main-photo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#e9e7dc}.gallery-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}.gallery-thumbs button{display:block;width:100%;height:auto;aspect-ratio:16/9;cursor:pointer;border:2px solid transparent;padding:2px}.gallery-thumbs button[aria-pressed="true"]{border-color:var(--green)}.gallery-thumbs img{display:block}.gallery #gallery-caption{font-size:13px;margin:12px 0}.gallery-thumbs button:focus-visible{outline-offset:1px}#large-photo{display:block;max-height:75vh;object-fit:contain}@media(max-width:480px){.gallery-thumbs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.neighborhood-map{margin:16px 0 24px}
+.neighborhood-map > a,.neighborhood-map img{display:block}
+.neighborhood-map img{width:100%;height:auto;border:1px solid var(--line);border-radius:12px}
+.neighborhood-map figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px;margin-top:8px}
